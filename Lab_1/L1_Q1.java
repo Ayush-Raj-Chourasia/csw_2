@@ -23,7 +23,6 @@ class Circle {
 public class L1_Q1 {
     public static void main(String[] args) {
         Circle ob = new Circle();
-
         ob.set(10);
         System.out.println("Radius of circle: " + ob.get());
         System.out.println("Area of circle: " + ob.area());
