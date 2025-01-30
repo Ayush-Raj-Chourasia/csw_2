@@ -20,6 +20,10 @@ class Complex{
         Complex c4 = new Complex(a,b);
         return c4;
     }
+
+    public Complex multiply(Complex c1 , Complex c2){
+        return new Complex((c1.real*c2.real - c1.img*c2.img), (c1.real*c2.img + c2.real*c1.img));
+    }
 }
 
 public class L3_Q1{
@@ -29,8 +33,10 @@ public class L3_Q1{
         Complex c3 = new Complex(0, 0);
         Complex sum = c3.add(c1, c2);
         Complex diff = c3.diff(c1,c2);
+        Complex multiply = c3.multiply(c1, c2);
         System.out.println("Addition: "+sum.real+ " + "+sum.img+"i");
         System.out.println("Difference: "+diff.real+ " + "+diff.img+"i");
+        System.out.println("Multiply: "+multiply.real+ " + "+multiply.img+"i");
 
     }
 }
