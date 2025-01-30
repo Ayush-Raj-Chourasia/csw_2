@@ -1,4 +1,3 @@
-package Lab_1;
 
 class Circle {
     private double radius;
@@ -15,8 +14,8 @@ class Circle {
         }
     }
 
-    public double area() {
-        return Math.PI * this.radius * this.radius;
+    public double area(double radius) {
+        return Math.PI * radius * radius;
     }
 }
 
@@ -24,7 +23,8 @@ public class L1_Q1 {
     public static void main(String[] args) {
         Circle ob = new Circle();
         ob.set(10);
-        System.out.println("Radius of circle: " + ob.get());
-        System.out.println("Area of circle: " + ob.area());
+        double r = ob.get();
+        System.out.println("Radius of circle: " + r);
+        System.out.println("Area of circle: " + ob.area(r));
     }
 }
